@@ -3,12 +3,12 @@
 **This project implements an automated, agent-driven data ingestion pipeline that loads files from Amazon S3 into Amazon Redshift Serverless using AWS Lambda, Bedrock (Claude 3 Sonnet), and Strands Agents.**
 
 **The pipeline supports:**
-Data quality validation & profiling
-Schema inference & DDL generation
-Redshift table creation
-Full load & incremental load with SCD Type 2 handling
-Automated archival of source files
-All orchestration is performed dynamically at runtime using AI agents.
+-Data quality validation & profiling
+-Schema inference & DDL generation
+-Redshift table creation
+-Full load & incremental load with SCD Type 2 handling
+-Automated archival of source files
+-All orchestration is performed dynamically at runtime using AI agents.
 
 
 EXECUTION:-
@@ -18,15 +18,15 @@ EXECUTION:-
 **1. Quality Assurance Agent**
 
 **Purpose**
-Ensures data quality before loading.
+-Ensures data quality before loading.
 
 **Responsibilities**
-Detect file metadata
-Profile dataset
-Execute data quality rules
-Remove duplicate rows
-Detect potential primary keys
-Write cleaned data to S3 (TMP path)
+-Detect file metadata
+-Profile dataset
+-Execute data quality rules
+-Remove duplicate rows
+-Detect potential primary keys
+-Write cleaned data to S3 (TMP path)
 
 **Key Tools**
 get_s3_file_metadata
